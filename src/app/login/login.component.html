@@ -1,0 +1,116 @@
+<header>
+  <app-navbar></app-navbar>
+</header>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            Login into your <br />
+            <span style="color: hsl(218, 81%, 75%)">existing account</span>
+          </h1>
+          <!-- <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus, expedita iusto veniam atque, magni tempora mollitia
+            dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+            ab ipsum nisi dolorem modi. Quos?
+          </p> -->
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form [formGroup]="loginForm" (ngSubmit)="submit()">
+                <div class="headlog">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  
+                </div>
+                <p class="headtext">Login</p>
+                <!-- {{loginform.form.valid}} -->
+               
+                <!-- 2 column grid layout with text inputs for the first and last names
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" placeholder="First name" />
+                      <label class="form-label" for="form3Example1">First name</label> 
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" placeholder="Last name" />
+                       <label class="form-label" for="form3Example2">Last name</label> 
+                    </div>
+                  </div>
+                </div>
+            -->
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" placeholder="Email address" formControlName="email" required />
+                  <!-- <label class="form-label" for="form3Example3">Email address</label> -->
+                  <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email Id is required field</small> -->
+                </div>
+
+        
+                <!-- Password input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="typePasswordX" class="form-control" placeholder="Password" formControlName="password" required /> 
+                  <!-- <label class="form-label" for="form3Example4">Password</label> -->
+                  <!-- <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is required field</small> -->
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-right mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked required/>
+                  <label class="form-check-label" for="form2Example33"></label>
+                    <p>Remember me</p>
+                </div>
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign in
+                </button>
+  
+                <!-- Register buttons -->
+                <div class="text-center"><p>Don't have an account?<a href="/register" style="color:brown;margin-left: 2%;">Sign up </a></p>
+                  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-google"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-linkedin"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-twitter"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-envelope"></i>
+                  </button>
+                  <p>For<a href="/adminlogin" style="color:brown;margin-left: 2%;"> Admin Login</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+

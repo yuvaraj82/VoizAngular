@@ -1,0 +1,127 @@
+/* #dongle-cards{
+    /* background-color: #1F1D36; *
+    padding-top: 5%;
+    align-items: center;
+}
+.card{
+    padding:5% 10%;
+    text-align: center;
+}
+.row-pad{
+    padding: 1% 5% 3% 5%;
+    margin-left: 7%;
+} */
+/* *{
+    box-sizing: border-box;
+}
+li{
+    display:list-item;
+    list-style-type: none;
+    
+}
+.card-details li{
+    width:24%;
+
+}
+ .card-details li {
+    list-style-type: none;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    font-weight: 400;
+    padding-right: 2%;
+} 
+.cards-details {
+    background: #fff;
+    border-radius: 8px;
+    font-weight: 100;
+    width: 96%;
+    float: left;
+    padding: 0!important;
+    overflow: hidden;
+} */
+
+#pagebg {
+    /* background-color:#ccc; */
+    /* background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1606/Internet_Business_Technology_HD_Wallpaper_16_1366x768.jpg"); */
+    background-image: url("../../assets/netweb.jpg");
+  
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    margin: 0% 0%;
+  } 
+  .container{
+      padding-top: 2%;
+  } 
+  p{
+      text-align: center;
+      font-size: 1cm;
+      color: rgb(0, 0, 0);
+      background-color:rgba(240, 248, 255, 0.726);
+      backdrop-filter: saturation(150%) blur(5px);
+      font-style: bold;
+      font-weight: 500;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .custom-column {  
+    background-color:  rgba(238, 238, 238, 0.562);
+    backdrop-filter: saturation(200%) blur(5px);
+    /* border: 5px solid  #eee;     */
+    padding: 10px;
+    /* box-sizing: border-box;   */
+  }
+  
+  .custom-column-header {
+    font-size: 24px;
+    background-color: #f51717da;  
+    color: white;
+    padding: 15px;  
+    text-align: center;
+  }
+  
+  .custom-column-content {
+    background-color: rgba(255, 255, 255, 0.685);
+    /* border: 2px solid white;   */
+    padding: 20px;  
+  }
+  
+  .custom-column-footer {
+    background-color: rgba(238, 238, 238, 0.685);   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  html {
+      display: flex;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       height: 100%;
+     }
+     
+     /* Styles for the tilt block */
+     #tilt {
+       display: block;
+       height: 200px;
+       width: 300px;
+       background-color: grey;
+       margin: 0 auto;
+       transition: box-shadow 0.1s, transform 0.1s;
+       
+       /*
+         * Adding image to the background
+         * No relation to the hover effect.
+         */
+       background-image: url(http://unsplash.it/300/200);
+       background-size: 100%;
+       background-repeat: no-repeat;
+     }
+     
+     #tilt:hover {
+       box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+       cursor: pointer;
+     }

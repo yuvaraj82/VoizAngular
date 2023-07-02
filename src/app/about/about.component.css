@@ -1,0 +1,15 @@
+#about{
+    background-color:#FFC3C3;
+}
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color:aqua;
+}
+.card{
+     padding:5% 5%; 
+    text-align: center;
+}
+.row-pad{
+    padding: 1% 5% 3% 5%;
+}
